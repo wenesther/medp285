@@ -19,9 +19,8 @@
         vertical-align: right;
       }
 
-      /* Slideshow container */
       .slideshow-container {
-        width: 50%; /*play with scale to alter layout*/
+        width: 50%;
       	float:left;
       }
 
@@ -86,28 +85,21 @@
     </div>
 
     <script>
-      // create variable to index the slides - to track the slides
       var slideIndex = 0;
-      // call a function that does something with the slides
       showSlides();
 
       function showSlides() {
-        // a variable to be used in the for loop - i for "index"
         var i;
-        // target the slides in the DOM as slides
         var slides = document.getElementsByClassName("mySlides");
-        // loop through the slides showing them one at a time (display)
         for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none"; //none hides the slides
+          slides[i].style.display = "none"; 
         }
-        // increment the slides from 0 to the total number of slides (for loop)
         slideIndex++;
-        // loop back to the beginning
         if (slideIndex > slides.length) {
           slideIndex = 1;
         }
-        slides[slideIndex - 1].style.display = "block"; //show the slide
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
+        slides[slideIndex - 1].style.display = "block"; 
+        setTimeout(showSlides, 4000);
       }
     </script>
 </body>
