@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <head><title>MEDP285 Assignment 1</title>
-	<h1><center>MEDP285 Assignment 1 - Photo Essay</center></h1>
-	<h2><center>Esther Wen, Summer 2020</center></h2>
-	<center><strong>
-			<a href="index.html">HOME</a>
-			<a href="projects.html">PROJECTS</a>
-	</strong></center>
+  <h1><center>MEDP285 Assignment 1 - Photo Essay</center></h1>
+  <h2><center>Esther Wen, Summer 2020</center></h2>
+  <center><strong>
+      <a href="index.html">HOME</a>
+      <a href="projects.html">PROJECTS</a>
+  </strong></center>
 
-		<hr />
+    <hr />
 <style>
       body {
         font-family: Arial, sans-serif;
+      }
+
+      body div {
+        display: flex;
+        flex-direction: row;
+      }
+
+      body div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
       }
       .mySlides {
         display: none;
@@ -20,10 +31,14 @@
       }
 
       .slideshow-container {
-        width: 50%;
-      	float:left;
+        display: flex;  
+        float: left;
       }
 
+      .slideshow-container-2 {
+        display: flex;
+        float: right;
+      }
    
       .fade {
         animation-name: fade;
@@ -41,66 +56,130 @@
     </style>
 </head>
 <body>
-<h2> Summer During Covid </h2>
-<div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="img/socialmedia.jpg" style="width:100%" />
-      </div>
+  <h2> <center>Summer During Covid vs. Summer Before Covid </center></h2>
+  <div>
+    <div>
+      <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/socialmedia.jpg" style="width:50%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/window.jpg" style="width:50%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/tracks.jpg" style="width:50%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/glove.jpg" style="width:50%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/flowers.jpg" style="width:50%" />
+            </div>
 
-      <div class="mySlides fade">
-        <img src="img/window.jpg" style="width:100%" />
-      </div>
+            <div class="mySlides fade">
+              <img src="img/sidewalk1.jpg" style="width:50%" />
+            </div>
 
-      <div class="mySlides fade">
-        <img src="img/tracks.jpg" style="width:100%" />
-      </div>
+            <div class="mySlides fade">
+              <img src="img/closed.jpg" style="width:50%" />
+            </div>
 
-      <div class="mySlides fade">
-        <img src="img/glove.jpg" style="width:100%" />
-      </div>
+            <div class="mySlides fade">
+              <img src="img/closed2.jpg" style="width:50%" />
+            </div>
 
-      <div class="mySlides fade">
-        <img src="img/flowers.jpg" style="width:100%" />
-      </div>
+            <div class="mySlides fade">
+              <img src="img/busstation.jpg" style="width:50%" />
+            </div>
 
-      <div class="mySlides fade">
-        <img src="img/sidewalk1.jpg" style="width:100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/closed.jpg" style="width:100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/closed2.jpg" style="width:100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/busstation.jpg" style="width:100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/target.jpg" style="width:100%" />
+            <div class="mySlides fade">
+              <img src="img/target.jpg" style="width:50%" />
+            </div>
       </div>
     </div>
+  
+    <div>
+      <div class="slideshow-container-2">
+            <div class="mySlides-2 fade">
+              <img src="img/Bridge.jpg" style="width:100%" />
+            </div>
+  
+            <div class="mySlides-2 fade">
+              <img src="img/BWW.jpg" style="width:100%" />
+            </div>
+  
+            <div class="mySlides-2 fade">
+              <img src="img/Concert.jpg" style="width:100%" />
+            </div>
+  
+            <div class="mySlides-2 fade">
+              <img src="img/Friends.jpg" style="width:100%" />
+            </div>
+  
+            <div class="mySlides-2 fade">
+              <img src="img/Manor.jpg" style="width:100%" />
+            </div>
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
+            <div class="mySlides-2 fade">
+              <img src="img/Pool.jpg" style="width:100%" />
+            </div>
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none"; 
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block"; 
-        setTimeout(showSlides, 4000);
+            <div class="mySlides-2 fade">
+              <img src="img/QC.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides-2 fade">
+              <img src="img/Soccer.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides-2 fade">
+              <img src="img/Sushi.jpg" style="width:100%" />
+            </div>
+
+            <div class="mySlides-2 fade">
+              <img src="img/WWE.jpg" style="width:100%" />
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex1 = 0;
+    var slideIndex2 = 0;
+    showSlides1();
+    showSlides2();
+
+    function showSlides1() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
       }
-    </script>
+      slideIndex1++;
+      if (slideIndex1 > slides.length) {
+        slideIndex1 = 1;
+      }
+      slides[slideIndex1 - 1].style.display = "block"; 
+      setTimeout(showSlides1, 4000);
+    }
+
+    function showSlides2() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides-2");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+      }
+      slideIndex2++;
+      if (slideIndex2 > slides.length) {
+        slideIndex2 = 1;
+      }
+      slides[slideIndex2 - 1].style.display = "block"; 
+      setTimeout(showSlides2, 4000);
+    }
+  </script>
 </body>
 
