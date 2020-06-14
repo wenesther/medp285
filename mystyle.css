@@ -1,0 +1,141 @@
+		* { 
+			box-sizing:border-box; 
+		}
+
+		html{
+			height:100%;
+			scroll-behavior:smooth;
+		}
+
+		#header img {
+			width:98vw;
+			margin:auto;
+		}
+
+		body {
+      		font-family: lores-12, sans-serif;
+      		position:relative;
+      		margin:10;
+      		padding-bottom:6em;
+      		min-height:100%;
+			background:#A4DBF7;
+		}
+
+
+		h1 {
+			text-align:center;
+		}
+
+		h2 { 
+			text-align:center; 
+		}
+
+		p {
+			line-height:1.5em;
+		}
+
+		nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 3em;
+        width: 100%;
+        color: #ffffff; /*white*/
+        background-color: rgba(164, 219, 247, 0.8);
+        margin: 0;
+        margin-top: -10px;
+        padding: 0 0 10px 0;
+        z-index: 10;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
+      nav a:hover {
+        color: white;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        /*padding: 0px 10px 15px 10px;*/
+        border-right: 1px dotted #999;
+      }
+      nav ul li a img {
+        vertical-align: text-bottom;
+      }
+      nav ul li:last-child {
+        border-right: none;
+      }
+
+      #main {
+        margin-top: 3em;
+        padding: 0 2em 0 2em;
+        margin-bottom: 100px;
+      }
+
+      #main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+     
+      section {
+        margin-top: 4em;
+      }
+      footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2em;
+      }
+      footer a { color: yellow }
+
+      /* Creating CSS dropdown menu */
+      .dropdown {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+      }
+      /* dropdown content hidden by default */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        /*margin-top: .5em;*/
+        min-width: 10em;
+        background-color: rgba(164, 219, 247, 0.6);
+        box-shadow: 0px 8px 16px 0px rgba(164, 219, 247, 0.2);
+        z-index: 20;
+      }
+      /*links insde the dropdown */
+      .dropdown-content a {
+        background-color: rgba(164, 219, 247, 0.6);
+        color: black;
+        padding: .5em 2em .5em 1em;
+        text-decoration: none;
+        border-bottom: 1px solid gray;
+        display: block;
+      }
+      /*show dropdown menu on hover*/
+      .dropdown:hover .dropdown-content {
+        display: block
+      }
+
+.boxLeft-2 {
+      margin: 0px;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      background-color: rgb(164, 219, 247);
+      margin:auto;
+    }
+
+        }

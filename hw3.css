@@ -1,0 +1,85 @@
+* { box-sizing: border-box; }
+
+main{
+  background: #A4DBF7;
+}
+body{
+  background-image: url(img/gyrosong.png);
+  background-repeat: repeat-x repeat-y;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+p{
+  font-weight: bold;
+  text-align: center;
+}
+    .boxLeft {
+      margin: 15px;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      border-radius: 15px 15px 15px 15px;
+      background-color: pink;
+      width: 400px;
+      float: left;
+    }
+    .boxLeft-2 {
+      margin: 0px;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      background-color: rgb(164, 219, 247);
+      margin:auto;
+    }
+    .boxRight {
+      margin: 15px;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      border-radius: 15px 15px 15px 15px;
+      background-color: white;
+      width: 670px;
+      float: right;
+    }
+    .boxClear {
+      margin: 15px;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      border-radius: 15px 15px 15px 15px;
+      background-color: white;
+      width: 750px;
+      clear: both;
+    }
+    .boxAbsolute {
+      margin: 15px;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      border-radius: 15px 15px 15px 15px;
+      background-color: pink;
+      width: 140px;
+      position: absolute;
+      top: 3000px;
+      left: 600px;
+    }
+    .boxSticky {
+      margin: auto;
+      padding: 20px 10px 20px 15px;
+      border: 0px solid #999;
+      border-radius: 15px 15px 15px 15px;
+      background-color: pink;
+      width: 750px;
+      position: sticky;
+      top: 0px;
+      z-index: 10;
+    }
+
+
+      .boxFixed {
+      margin: auto;/*15px;
+      padding: 20px 10px 20px 15px;*/
+      border: 0px solid #999;
+      border-radius: 15px 15px 15px 15px;
+      background-color: white;
+      width: 230px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
