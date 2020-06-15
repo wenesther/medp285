@@ -11,6 +11,9 @@
 			width:98vw;
 			margin:auto;
 		}
+		td {
+			text-align:center;
+		}
 
 		body {
       		font-family: lores-12, sans-serif;
