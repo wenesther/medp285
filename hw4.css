@@ -131,9 +131,11 @@ h2 {
 }
 
 .sound img {
+  grid-row: 1;
   margin-left: 130px;
 }
 .sound audio{
+  grid-row: 2;
   margin-left:40px;
   display:flex;
   justify-content: center;
