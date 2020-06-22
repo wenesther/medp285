@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  display: grid;
+  min-width: auto;
+  min-height: auto;
+  grid-template-rows: auto auto 4fr;
+  grid-template-columns: auto auto auto;
+  margin: 0;
+  background-color:black;
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+  /*ANIMATIONS*/
+ @keyframes fadetop {
+		0% {
+			position: absolute;
+			top: 0%;
+			opacity: 0;
+		}
+		75% {
+			position: absolute;
+			top: 25%;
+			opacity: 1;
+		}
+		100% { opacity: 0; }
+	}
+ @keyframes bottomFadeOut {
+		0% {
+			position: absolute;
+			bottom: 0%;
+			opacity: 0;
+		}
+		75% {
+			position: absolute;
+			bottom: 25%;
+			opacity: 1;
+		}
+		100% { opacity: 0; }
+	}
+ @keyframes topFadeOutVertical {
+		0% {
+			position: absolute;
+			top: 20%;
+			opacity: 0;
+		}
+		75% {
+			position: absolute;
+			top: 45%;
+			opacity: 1;
+		}
+		100% { opacity: 0; }
+	}
+ @keyframes rightFadeInOut{
+		0% {
+			position: absolute;
+			right: 0%;
+			opacity: 0;
+		}
+		75% {
+			position: absolute;
+			right: 10%;
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+			right: 10%
+		}
+	}
+
+ @keyframes leftfadeinout{
+ 		0% {
+ 			position: absolute;
+ 			left: 0%;
+ 			opacity: 0%;
+ 		}
+ 		75% {
+ 			position: absolute;
+ 			left: 10%;
+ 			opacity: 1;
+ 		}
+ 		100%{
+ 			opacity:0;
+ 			left: 10%;
+ 		}
+ }
+ @keyframes fadeInOut{
+		0% {
+			opacity: 0;
+		}
+		45% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+@keyframes fadeleftright{
+		0% {
+			position: absolute;
+			opacity: 0;
+			left: 0%;
+		}
+
+		50% {
+			position: absolute;
+			opacity: 1;
+			left: 30%;
+		}
+
+		100% {
+			opacity: 0;
+		}
+}
+
+header {
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background: #3a3a34;
+  margin: 0;
+  padding:1em;
+}
+h1 {
+  color: white;
+  font-size:35px;
+}
+nav {
+  text-align:center;
+  font-size:15px;
+  font-weight: bold;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 0 10px;
+  background: #3a3a34;
+}
+nav a {
+        text-decoration: none;
+        color: white;
+}
+nav a:hover {
+        color: red;
+}
+nav ul {
+        list-style-type: none;
+}
+nav ul li {
+        display: inline;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 30px;
+}
+.dropdown {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+}
+.dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 10em;
+        background-color: red;
+        box-shadow: 0px 8px 16px 0px rgba(128, 0, 0, 0.8);
+        z-index: 20;
+}
+.dropdown-content a {
+        background-color: #3a3a34;
+        color: white;
+        padding: .5em 2em .5em 1em;
+        text-decoration: none;
+        display: block;
+}
+.dropdown:hover .dropdown-content {
+        display: block
+}
+
+.box {
+	display: block;
+	position: relative;
+	border: 7px solid;
+	border-color: rgb(139,0,0);
+	margin-top:-10px;
+	margin-left: 28vw;
+	margin-right:28vw;
+	padding-top: 3%;
+	background-image: no-repeat;
+	background-color: #d2cec8;
+	width: 700px;
+	height: 430px;
+	z-index: 1;
+}
+.box img{
+	margin-top:-5em;
+	transform: scale(.75);
+	margin-left: 5.5em;
+	z-index: 5;
+}
+
+.one {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  	display: flex;
+  	font-size: 3em;
+  	width: auto;
+  	position: absolute;
+  	left: 7%;
+  	top: 90%;
+	color: black;
+	opacity: 0;
+	animation-name: fadetop;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	z-index: 50;
+}
+
+.two {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 2em;
+  	position: absolute;
+  	left: 40%;
+  	bottom: 25%;
+  	color: black;
+	opacity: 0;
+	animation-name: bottomFadeOut;
+	animation-delay: 5s;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+.three {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 3em;
+  	position: absolute;
+  	top: 10%;
+  	color: black;
+	opacity: 0;
+	animation-name: rightFadeInOut;
+	animation-delay: 10s;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+.four {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	transform: skew(-20deg);
+  	font-size: 2em;
+  	position: absolute;
+  	left: 7%;
+  	top: 45%;
+  	color: black;
+	white-space: nowrap;
+	opacity: 0;
+	animation-name: topFadeOutVertical;
+	animation-delay: 15s;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+}
+
+.five {
+	transform: rotate(-90deg);
+	font-size: 2em;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  	position: absolute;
+  	left: 10%;
+  	top: 60%;
+	color: black;
+	white-space: nowrap;
+	opacity: 0;
+	animation-name: topFadeOutVertical;
+	animation-delay: 20s;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+}
+
+.six {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 2em;
+  	position: absolute;
+  	left: 20%;
+  	bottom: 35%;
+  	color: black;
+	opacity: 0;
+	animation-name: bottomFadeOut;
+	animation-delay: 25s;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+.seven {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 1.5em;
+ 	position: absolute;
+  	left: 0%;
+  	top: 45%;
+  	color: black;
+	white-space: nowrap;
+	opacity: 0;
+	animation-name: fadeleftright;
+	animation-delay: 30s;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+.eight {
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 2em;
+ 	position: absolute;
+  	left: 5%;
+  	top: 45%;
+ 	color: black;
+	white-space: nowrap;
+	opacity: 0;
+	animation-name: leftfadeinout;
+	animation-delay: 35s;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+}
+
+.nine{
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 2em;
+ 	position: absolute;
+  	left: 42%;
+  	top: 45%;
+  	color: black;
+	white-space: nowrap;
+	opacity: 0;
+	animation-name: fadeInOut;
+	animation-delay: 40s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+.ten{
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	transform: skew(-10deg);
+	font-size: 2em;
+ 	position: absolute;
+  	left: 42%;
+  	top: 45%;
+  	color: black;
+	white-space: nowrap;
+	opacity: 0;
+	animation-name: fadeInOut;
+	animation-delay: 42s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+h2 a{
+	text-decoration: none;
+	color: white;
+}
+
+h2 a:hover{
+	color:red;
+
+}
