@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
   display: grid;
   min-width: auto;
   min-height: auto;
