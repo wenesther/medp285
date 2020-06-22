@@ -20,11 +20,13 @@
       .slideshow-container {
         display: flex;  
         float: left;
+        padding-left: 100px;
       }
 
       .slideshow-container-2 {
         display: flex;
         float: right;
+        padding-right: 100px;
       }
    
       .fade {
