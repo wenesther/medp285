@@ -1,0 +1,18 @@
+h1{font: 25px arial;
+font-weight: bold;
+text-align: center;
+margin: 25px;
+}
+#theCanvas {
+				width: 500px;
+				margin: auto;
+				border: 5px solid black;
+				display: block;
+			}
+p{font: 15px arial, sans-serif;
+	text-align: center;
+}
+body { 
+  background-image: url(pog.jpg);
+  background-color: #F7FFBF; 
+}
