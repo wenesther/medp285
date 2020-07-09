@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pugs | Home</title>
+	<link rel="stylesheet" type="text/css" href="basic.css">
+	<link rel="stylesheet" type="text/css" href="finalhome.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ngk3rtx.css">
+	<link rel="icon" type="image/png" href="img/iggyfav.png"/>
+</head>
+<header>
+<nav>
+	<ul type="square">
+		<li>
+			<a href="finalhome.html"> HOME </a>
+		</li>
+		<li>
+			<a href="breed.html"> WHAT ARE PUGS? </a>
+		</li>
+		<li>
+			<a href="iggy.html"> MEET IGOR! </a>
+		</li>
+		<li id="ig">
+			<a href="https://www.instagram.com/igorcollective/" target="_blank"> 
+				<img src="img/instagram.png" height="19"> </a>
+		</li>
+	</ul>
+</nav>
+</header>
+<br>
+<br>
+<body>
+	<section class="intro"> 
+		<br>
+		<div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/pug1.png" style="width:95%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/pug2.png" style="width:95%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/pug3.png" style="width:95%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/pug4.png" style="width:95%" />
+            </div>
+  
+            <div class="mySlides fade">
+              <img src="img/pug5.jpg" style="width:95%" />
+            </div>
+		</div>
+<br>
+		<p> Do you love pugs? Have you ever thought about taking care of one? Ever want to meet one? You're in the right place! This is an informational site on the loveable dog breed, <strong>the pug</strong>. Dog lovers and prospective dog owners, welcome! Here, you can learn about my favorite dog breed and meet my pug, Igor. </p>
+<br>
+	</section>
+	<h1> &#9825; START YOUR LEARNING JOURNEY HERE &#9825;</h1>
+	<section class="options">
+		<a href="breed.html">
+		<div class="breed">
+			<h2> BREED INFORMATION </h2>
+			<img src="img/pug6.png" alt="generic pug">
+		</div>
+		</a>
+		<a href="iggy.html">
+		<div class="igor">
+			<h2> MEET IGOR! </h2>
+			<img src="img/iggy1.png" alt="igor">
+		</div>
+		</a>
+	</section>
+</body>
+
+<script>
+    var slideIndex1 = 0;
+    showSlides1();
+
+    function showSlides1() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+      }
+      slideIndex1++;
+      if (slideIndex1 > slides.length) {
+        slideIndex1 = 1;
+      }
+      slides[slideIndex1 - 1].style.display = "block"; 
+      setTimeout(showSlides1, 3000);
+    }
+</script>
+<br>
+<footer>
+     <p><a href="mailto:ewen3887@gmail.com"> &#9993; EMAIL ME &#9993;</a></p>
+     <a href="https://wenesther.github.io/medp285/index.html"> MEDP285 Home </a> 
+</footer>
+
+</html>
+
