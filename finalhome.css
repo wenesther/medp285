@@ -1,0 +1,109 @@
+.intro {
+			width: 92vw;
+			height: auto;
+			margin: auto;
+			margin-top: 50px;
+			margin-left: 4%;
+			background-color: rgba(255, 240, 227, 0.8);
+			border-radius: 20px;
+			text-align: center;
+		}
+
+		.intro p {
+			margin-left: 4%;
+			margin-right: 4%;
+			text-align: center;
+		}
+		.options {
+			display: flex;
+			margin-top: 40px;
+			justify-content: center;
+		}
+		.breed {
+			width: 35vw;
+			height: 95%;
+			margin-left: 0;
+			margin-right: 3%;
+			background-color: rgba(255, 240, 227, 0.8);
+			border: 2px solid #fff0e3;
+			border-radius: 60px;
+			text-align: center;
+		}
+
+		.breed img {
+			width: 85%;
+			margin: auto;
+		}
+
+		.igor {
+			width: 35vw;
+			height: 95%;
+			margin-left: 3%;
+			border: 2px solid #fff0e3;
+			background-color: rgba(255, 240, 227, 0.8);
+			border-radius: 60px;
+			text-align: center;
+		}
+
+		.igor img {
+			width: 75%;
+			margin:auto;
+			padding-top: 20px;
+		}
+		h1 {
+			font-family: "verveine", sans-serif;
+			font-size: 60px;
+			padding-top: 30px;
+			text-align: center;
+		}
+
+		h2 {
+			text-shadow: 2px 2px white;
+			padding-top: 35px;
+		}
+
+		section a{
+			color: rgb(55, 56, 51);
+			text-decoration: none;
+		}
+		
+		.breed:hover{
+			border: 2px solid #a67176;
+		}
+
+		.breed:hover h2 {
+			opacity: 70%;
+		}
+
+		.breed:hover img {
+			transform: rotate(2deg);
+		}
+
+		.igor:hover {
+			border: 2px solid #a67176;
+		}
+
+		.igor:hover img {
+			transform: rotate(2deg);
+		}
+
+		.igor:hover h2 {
+			opacity: 70%;
+		}
+
+		.slideshow-container {
+			max-width: 1370px;
+			margin: auto;
+		}
+		.fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+		}
+
+		@keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }

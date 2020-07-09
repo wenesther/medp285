@@ -1,0 +1,213 @@
+h1 {
+			font-family: "verveine", sans-serif;
+			font-size: 60px;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.breedintro {
+			width: 90vw;
+			height: auto;
+			margin: auto;
+			margin-bottom: 30px;
+			border-radius: 30px;
+			text-align: center;
+			background-color: rgba(255, 240, 227, 0.8);
+			font-size: 18px;
+		}
+		.breedintro p {
+			padding: 25px;
+		}
+		#directions {
+			font-family: "verveine", sans-serif;
+			font-size: 3vw;
+			text-align: center;
+			padding-top: 1.5%;
+			color: white;
+			text-shadow: 3px 3px black;
+			letter-spacing: 1.3px;
+		}
+		.container {
+			width: 90vw;
+			height: auto;
+			background-color: rgba(73, 63, 47, 0.6);
+			margin: auto;
+			margin-top: 10px;
+			border-radius: 30px
+		}
+	.st0{fill:#E8D7B9;}
+	.st1{fill:#B9AF9C;}
+	.st2{fill:#030302;}
+	.st3{fill:#3E3E3D;}
+	.st4{fill:#B9AF9D;}
+	.st5{fill:#6B6762;}
+	.st6{fill:#020202;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:#3C2415;}
+	.st9{fill:#191311;stroke:#18110E;stroke-miterlimit:10;}
+	.st10{opacity:0.67;fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+		svg {
+			margin: auto;
+			margin-top: 5%;
+		}
+
+		#legs:hover{
+			cursor: pointer;
+			opacity: 90%;
+		}
+		#body:hover{
+			cursor: pointer;
+			opacity: 90%;
+		}
+		#face:hover{
+			cursor: pointer;
+			opacity: 90%;
+		}
+		#ears:hover{
+			cursor: pointer;
+			opacity: 90%;
+		}
+		#eyes:hover{
+			cursor: pointer;
+			opacity: 80%;
+		}
+		#tail:hover{
+			cursor: pointer;
+			opacity: 90%;
+		}
+		#desc-body {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);
+			width: 170px;
+			height: 100px;
+			top: 90vh;
+			left: 45vw;
+			border-radius: 40px 40px 40px 0px;
+			border: 4px solid #e8d7b9;
+			display: none;
+		}
+		#desc-legs {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);;
+			width: 150px;
+			height: 100px;
+			top: 100vh;
+			left: 13vw;
+			border-radius: 40px 40px 0px 40px;
+			border: 4px solid #e8d7b9;
+			display: none;
+		}
+		#desc-face {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);;
+			width: 230px;
+			height: 160px;
+			top: 90vh;
+			left: 71.5vw;
+			border-radius: 0px 40px 40px 40px;
+			border: 4px solid #e8d7b9;
+			display: none;
+		}
+		#desc-ears {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);;
+			width: 160px;
+			height: 90px;
+			top: 60vh;
+			left: 72vw;
+			border-radius: 40px 40px 40px 0px;
+			border: 4px solid #e8d7b9;
+			display: none;
+		}
+		#desc-eyes {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.9);;
+			width: 150px;
+			height: 90px;
+			top: 62vh;
+			left: 47vw;
+			border-radius: 40px 40px 0px 40px;
+			border: 4px solid #e8d7b9;
+			display: none;
+		}
+		#desc-tail {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.7);;
+			width: 130px;
+			height: 65px;
+			top: 66vh;
+			left: 24vw;
+			border-radius: 40px 40px 0px 40px;
+			border: 4px solid #e8d7b9;
+			display: none;
+		}
+		.container p {
+			position: absolute;
+			margin: auto;
+			padding-left: 15%;
+			padding-top: 15%;
+			padding-right: 15%;
+			padding-bottom: 15%;
+			text-align: center;
+		}
+		.procon {
+			display: flex;
+			justify-content: center;
+		}
+		.procon p {
+			padding: 25px;
+			padding-left: 30px;
+			font-size: 18px;
+		}
+		.pros {
+			margin-right: 1%;
+			width: 38vw;
+			height: auto;
+			background-color: rgba(255, 240, 227, 0.8);
+			border-radius: 30px;
+		}
+		.cons {
+			margin-left: 1%;
+			width: 38vw;
+			height: auto;
+			background-color: rgba(255, 240, 227, 0.8);
+			border-radius: 30px;
+		}
+		.onions {
+			width: 78vw;
+			height: auto;
+			margin: auto;
+			border-radius: 30px;
+			text-align: center;
+			background-color: rgba(255, 240, 227, 0.8);
+		}
+		.onions p {
+			padding: 30px;
+			text-align: justify;
+			font-size: 14px;
+		}
+		.source {
+			padding-top: 10px;
+			padding-bottom: 25px;
+			text-align: center;
+			font-size: 12px;
+		}
+		.source a{
+			color: #685a4a;
+			opacity: 100%;
+		}
+		.source a:hover{
+			opacity: 80%;
+		}
+		#totop {
+			text-align: right;
+		}
+		#totop a{
+			margin-right: 5px;
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+		}
+		#totop a:hover {
+			opacity: 50%;
+		}
